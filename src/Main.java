@@ -1,9 +1,11 @@
+import quizz.Quizz;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
        Quizz quizz = new Quizz();
-       quizz.OpenQuizz();
+       quizz.openQuizz();
 
         System.out.println("Bonjour, bienvenue dans le quizz !");
         System.out.println("Comment t'appelles-tu ?");
@@ -13,9 +15,9 @@ public class Main {
         System.out.println("C'est parti !");
         int scorePlayer = 0;
 
-        for(int i = 0; i < quizz.getListOfQuestions().size(); i++) {
-            String question = quizz.getListOfQuestions().get(i);
-            String answer = quizz.getListOfAnswers().get(i);
+        for(int i = 0; i < quizz.getQuestions().size(); i++) {
+            String question = quizz.getQuestions().get(i);
+            String answer = quizz.getAnswers().get(i);
             System.out.println(question);
             String answerPlayer = sc.nextLine();
             if(answerPlayer.equals(answer)) {

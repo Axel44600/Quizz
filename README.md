@@ -1,4 +1,4 @@
-# UDEMY - Quizz
+# UDEMY [ Java ] - Quizz
 Cette semaine, nous allons pouvoir réaliser notre propre quiz Java !
 
 Dans cet exercice, les questions proposent plusieurs réponses, et l’une d’entre-elle seulement est la bonne.
